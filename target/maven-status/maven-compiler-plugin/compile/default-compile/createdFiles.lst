@@ -1,0 +1,15 @@
+com\onlineretail\shoppersdeal\repository\CategoriesRepository.class
+com\onlineretail\shoppersdeal\repository\OrderRepository.class
+com\onlineretail\shoppersdeal\repository\BillRepository.class
+com\onlineretail\shoppersdeal\controller\ItemsInsertController.class
+com\onlineretail\shoppersdeal\model\Product.class
+com\onlineretail\shoppersdeal\repository\TaxRepository.class
+com\onlineretail\shoppersdeal\repository\ProductRepository.class
+com\onlineretail\shoppersdeal\model\Bill.class
+com\onlineretail\shoppersdeal\service\BillServiceImpl.class
+com\onlineretail\shoppersdeal\model\Order.class
+com\onlineretail\shoppersdeal\ShoppersDealApplication.class
+com\onlineretail\shoppersdeal\model\Categories.class
+com\onlineretail\shoppersdeal\controller\CheckOutController.class
+com\onlineretail\shoppersdeal\model\SalesTax.class
+com\onlineretail\shoppersdeal\service\BillService.class
