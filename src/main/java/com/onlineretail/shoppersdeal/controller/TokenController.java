@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.onlineretail.shoppersdeal.config.JwtTokenUtil;
 import com.onlineretail.shoppersdeal.model.TokenRequest;
 import com.onlineretail.shoppersdeal.model.TokenResponse;
+import com.onlineretail.shoppersdeal.model.UserDTO;
 import com.onlineretail.shoppersdeal.service.JwtUserDetailsService;
 
 @RestController
@@ -37,6 +38,11 @@ public class TokenController {
 		final String token = jwtTokenUtil.generateToken(userDetails);
 
 		return ResponseEntity.ok(new TokenResponse(token));
+	}
+
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	public ResponseEntity<?> saveUser(@RequestBody UserDTO user) throws Exception {
+		return ResponseEntity.ok(userDetailsService.save(user));
 	}
 
 	private void authenticate(String username, String password) throws Exception {
